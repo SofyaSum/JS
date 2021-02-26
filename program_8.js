@@ -6,15 +6,23 @@ function randomInteger(min, max) {
 }
 
 function power(val, pow) {
-  if (pow == 1) {
+  if (val == 0) {
+    return 0;
+  } else if ( val == 1) {
+    return 1;
+  } else if (pow == 0) {
+    return 1;
+  } else if (pow == 1) {
     return val;
-  } else {
+  } else if (pow > 1) {
     return val * power(val, pow - 1);
+  } else {
+    return 1 /  + power(val, -pow) + " или 1 / " + power(val, -pow);
   }
 }
 
-let a = randomInteger(1, 5);
-let b = randomInteger(1, 5);
+let a = randomInteger(-5, 5);
+let b = randomInteger(-5, 5);
 
 console.log(a + ' в степени ' + b);
 console.log(power(a, b));
