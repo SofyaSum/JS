@@ -6,14 +6,16 @@ var len = 100;
 
 
 while ( n < len) {
-  for (let i = 0; i < arr.length; i++) {
-    if (n > arr[i] & n % arr[i] == 0 ) {
+  for (var i = 0; i < arr.length; i++) {    //делим число на все простые числа
+    if (n > arr[i] & n % arr[i] == 0 ) {    //если делится, то выходим из цикла
       n++;
-      i = -1;             
-    }
+      break;            
+    } 
   }
-  arr.push(n);
-  n++;
+  if (i == arr.length) {          //если не разделилось ни на одно число,
+      arr.push(n);                //то добавляем в массив
+      n++;
+    }
 }
 
 console.log(arr);
