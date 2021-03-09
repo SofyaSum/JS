@@ -22,9 +22,7 @@ document.body.appendChild(table);
 
 for (let i = 1; i < 9; i++) {
   for (let j = 1; j < 9; j++) {
-    if (i % 2 == 0 & j % 2 == 0) {
-      table.rows[i].cells[j].style.backgroundColor = 'gray';
-    } else if (i % 2 != 0 & j % 2 != 0) {
+    if ((i + j) % 2 == 0) {
       table.rows[i].cells[j].style.backgroundColor = 'gray';
     }
   }
