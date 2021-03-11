@@ -1,6 +1,5 @@
 body {
   font: 1em sans-serif;
-  display: flex;
 }
 #catalog {
   border: 1px solid gray;
