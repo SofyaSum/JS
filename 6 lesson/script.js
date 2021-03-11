@@ -28,9 +28,14 @@ function addToBasket(obj) {
   tr.appendChild(tdPrice);
   document.getElementById('cart-contain').appendChild(tr);
   basket.push(product[obj.id]);
-  console.log(basket);
   totalSum();
   return basket;
+}
+
+function removeCart() {
+  basket = [];
+  document.getElementById('cart-contain').innerHTML = "<tr><td>Наименование товара</td><td>Сумма</td></tr>";
+  document.getElementById('total').innerHTML = "0 $";
 }
 
 function totalSum() {
