@@ -1,0 +1,94 @@
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 30%;
+  font-size: 2em;
+  margin-left: 40px;
+}
+
+img {
+  margin: 20px;
+}
+
+#next {
+  margin-top: 20px;
+  height: 200px;
+}
+
+#score,
+#lines {
+  margin-top: 20px;
+}
+
+#board {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dcd6bc;
+  margin-left: 50px;
+  margin-top: 20px;
+  border: 7px solid #dcd6bc;
+  user-select: none;
+}
+
+#board div {
+  height: 30px;
+  width: 30px;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fffd9b;
+}
+
+.closed {
+  background-color: #dcd6bc;
+}
+
+.lFigure {
+  background-color: lightseagreen;
+}
+
+.jFigure {
+  background-color: springgreen;
+}
+
+.zFigure {
+  background-color: lightcoral;
+}
+
+.sFigure {
+  background-color: orange;
+}
+
+.tFigure {
+  background-color: teal;
+}
+
+.oFigure {
+  background-color: crimson;
+}
+
+.iFigure {
+  background-color: lime;
+}
+
+.pFigure {
+  background-color: olivedrab;
+}
+
+.cFigure {
+  background-color: coral;
+}
+
+.qFigure {
+  background-color: violet;
+}

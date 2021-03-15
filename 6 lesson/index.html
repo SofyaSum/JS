@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section id="catalog"></section>
+
+  <section class="cart">
+    <table id="cart-contain">
+      <tr>
+        <td>Наименование товара</td>
+        <td>Сумма</td>
+      </tr>
+    </table>
+    <table id="cart-contain">
+      <tr>
+        <td><button onclick="removeCart()">Удалить всё</button></td>
+        <td id="total-sum">Итого</td>
+        <td id="total"></td>
+      </tr>
+    </table>
+  </section>
+
+  <script defer src="script.js"></script>
+</body>
+
+</html>
